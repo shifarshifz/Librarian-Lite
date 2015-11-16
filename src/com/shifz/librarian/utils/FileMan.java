@@ -7,7 +7,6 @@ import java.io.File;
  */
 public class FileMan {
 
-
     private static final String[] videoExts = "webm,mkv,flv,vob,ogv,ogg,drc,mng,avi,mov,qt,wmv,rm,rmvb,asf,mp4,m4p,m4v,mpg,mp2,mpeg,mpe,mpv,mpg,mpeg,m2v,m4v,svi,3gp,3g2,mxf,roq,nsv".split(",");
     private static final CharSequence DOT_SRT = ".srt";
     private static final CharSequence DOT_STRING = ".";

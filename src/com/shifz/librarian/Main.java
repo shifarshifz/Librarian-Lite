@@ -9,10 +9,7 @@ public class Main {
     private static final String SUPER_PATH = ".";
 
     public static void main(String[] args) {
-
-        //Debug purpose
-        args = new String[]{"D:\\Projects\\Librarian\\extras\\TEST\\"};
-
+        
         if (args.length == 1) {
             String path = args[0];
 
