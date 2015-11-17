@@ -9,7 +9,7 @@ public class Main {
     private static final String SUPER_PATH = ".";
 
     public static void main(String[] args) {
-        
+
         if (args.length == 1) {
             String path = args[0];
 
@@ -29,6 +29,7 @@ public class Main {
                         if (FileMan.isVideoFile(file) || FileMan.isSubtitleFile(file)) {
                             final String fileNameWithOutExt = FileMan.getFileNameWithOutExtension(file.getName());
                             final File dir = new File(String.format("%s/%s", file.getParent(), fileNameWithOutExt));
+
                             if (!dir.exists() || !dir.isDirectory()) {
                                 if (dir.mkdir()) {
                                     System.out.println("*New directory : " + dir.getAbsolutePath());
@@ -36,9 +37,11 @@ public class Main {
                                     System.out.println("\t#Failed to make dir : " + dir.getAbsolutePath());
                                 }
                             }
+
                             final String destFileAbsPath = String.format("%s/%s", dir.getAbsolutePath(), file.getName());
                             final File destFile = new File(destFileAbsPath);
                             final boolean isMoved = file.renameTo(destFile);
+
                             if (isMoved) {
                                 System.out.println("*File moved: " + destFileAbsPath);
                             } else {

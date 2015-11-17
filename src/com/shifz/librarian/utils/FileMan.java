@@ -16,7 +16,7 @@ public class FileMan {
 
         if (file.isFile()) {
             final String fileName = file.getName();
-            final String fileExt = fileName.substring(fileName.lastIndexOf(DOT_CHAR) + 1);
+            final String fileExt = fileName.substring(fileName.lastIndexOf(DOT_CHAR) + 1).toLowerCase();
             for (final String okExt : videoExts) {
                 if (okExt.equals(fileExt)) {
                     return true;
