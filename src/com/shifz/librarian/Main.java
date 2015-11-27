@@ -11,6 +11,7 @@ public class Main {
     public static void main(String[] args) {
 
         if (args.length == 1) {
+                
             String path = args[0];
 
             //Checking if it's a super path

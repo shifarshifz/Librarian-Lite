@@ -1,4 +1,4 @@
 Windows Registry Editor Version 5.00
 
 [HKEY_CLASSES_ROOT\Directory\Background\shell\Librarian here\command]
-@="java -jar D:/lib.jar ."
+@="java -jar [Your-Lib-Jar-Path]/lib.jar ."
